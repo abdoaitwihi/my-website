@@ -1,0 +1,11 @@
+:root {
+  --h1-size: 40px;
+}
+@media screen and (max-width: 700px) {
+  :root {
+    --h1-size: 20px;
+  }
+}
+$h1Size: var(--h1-size);
+$primaryColor: white;
+$secondaryColor: grey;

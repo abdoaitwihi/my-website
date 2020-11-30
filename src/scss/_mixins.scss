@@ -1,0 +1,34 @@
+@mixin headeing-1($font-size: $h1Size, $color: $primaryColor) {
+  font-size: $font-size !important;
+  color: $color;
+  font-weight: 500 !important;
+}
+@mixin image-shadow {
+  border-radius: 5px;
+  box-shadow: 0 5px 6px -1px rgba(0, 0, 0, 0.2);
+}
+@mixin primary-button(
+  $paddingX: 20px,
+  $paddingY: 10px,
+  $color: $primaryColor,
+  $background: $secondaryColor,
+  $fontSize: 20px
+) {
+  text-decoration: none;
+  padding-right: $paddingX;
+  padding-left: $paddingX;
+  padding-top: $paddingY;
+  padding-bottom: $paddingY;
+  background-color: $background;
+  font-size: $fontSize;
+  color: $color;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $color;
+    color: $background;
+  }
+}

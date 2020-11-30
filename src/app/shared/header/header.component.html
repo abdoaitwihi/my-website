@@ -1,0 +1,16 @@
+<mat-toolbar
+  fxLayoutGap="10px"
+  fxLayoutAlign="space-around center"
+  fxLayoutAlign.lt-md="space-between center"
+  class="header-toolbar"
+  [class.scrooled]="scrolled"
+  id="nav"
+>
+  <span>My Website </span>
+  <div fxHide.lt-md fxLayout="row" fxLayoutAlign="end">
+    <app-nav-menu></app-nav-menu>
+  </div>
+  <button (click)="onClick()" mat-icon-button fxHide.gt-sm>
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>

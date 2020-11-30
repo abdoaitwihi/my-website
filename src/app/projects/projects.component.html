@@ -1,0 +1,14 @@
+<div class="container" fxLayout="row" fxLayoutAlign="center center">
+  <h1 class="m-0">MY PROJECTS</h1>
+</div>
+<div class="container projects py-5" fxLayout="row wrap">
+  <app-single-project
+    fxFlex="0 1 33%"
+    fxFlex.lt-md="0 1 50%"
+    fxFlex.lt-sm="0 1 100%"
+    *ngFor="let project of projects"
+    fxLayout="column"
+    fxLayoutAlign="stretch"
+    [project]="project"
+  ></app-single-project>
+</div>
