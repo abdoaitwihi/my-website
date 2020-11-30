@@ -7,7 +7,7 @@ import { Porject } from '../porject';
   styleUrls: ['./single-project.component.scss'],
 })
 export class SingleProjectComponent implements OnInit {
-  @Input() project: Porject[];
+  @Input() project: Porject;
   constructor() {}
 
   ngOnInit(): void {}
